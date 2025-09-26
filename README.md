@@ -21,13 +21,18 @@ A community-driven repository of AI agent templates, playbooks, and task definit
 
 ## How to Use
 
-These templates are designed to be used by AI coding assistants. To use a template:
+These templates are designed to be used by AI coding assistants following a standardized workflow:
 
-1.  Identify the task you want to perform (e.g., plan a new feature, fix a bug).
-2.  Choose the corresponding template from this repository.
-3.  Copy the content of the template.
-4.  Paste it into your AI assistant's chat window and fill in the `TODO` sections.
-5.  The AI agent will then follow the instructions in the template to complete the task.
+1. **Explain your request** to your coding assistant (e.g., "I need to fix a bug in my authentication system" or "I want to add a new feature for user profiles").
+
+2. **The AI assistant automatically:**
+   - Reviews the `AGENTS.md` file to understand the workflow
+   - Identifies the appropriate template based on your request:
+     - Bug fixes → `002_bug_fix_template.md`
+     - New features/development → `001_task_planning_template.md`
+     - Code reviews → `003_code_review_template.md`
+     - Git commits → `004_git_commit_workflow.md`
+   - Follows the template's instructions to complete your task
 
 ## Contributing
 
