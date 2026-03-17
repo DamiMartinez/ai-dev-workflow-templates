@@ -14,10 +14,19 @@ A community-driven repository of AI agent templates, playbooks, and task definit
 
 | File | Description |
 | --- | --- |
-| [001_task_planning_template.md](001_task_planning_template.md) | A systematic framework for planning and executing technical projects with AI assistance. |
-| [002_bug_fix_template.md](002_bug_fix_template.md) | A structured approach to identifying, analyzing, and resolving bugs. |
-| [003_code_review_template.md](003_code_review_template.md) | A comprehensive template for conducting thorough code reviews. |
-| [004_git_commit_workflow.md](004_git_commit_workflow.md) | A workflow for creating clear, consistent, and conventional git commits. |
+| [templates/001_task_planning.md](templates/001_task_planning.md) | A systematic framework for planning and executing technical projects with AI assistance. |
+| [templates/002_bug_fix.md](templates/002_bug_fix.md) | A structured approach to identifying, analyzing, and resolving bugs. |
+| [templates/003_code_review.md](templates/003_code_review.md) | A comprehensive template for conducting thorough code reviews. |
+| [templates/004_git_commit_workflow.md](templates/004_git_commit_workflow.md) | A workflow for creating clear, consistent, and conventional git commits. |
+
+## Available Skills
+
+Skills are reusable agent capabilities that can be invoked by name to perform specialized tasks. They leverage browser automation and developer tooling via MCP servers.
+
+| Skill | Description |
+| --- | --- |
+| [skills/scraping-website/](skills/scraping-website/SKILL.md) | Discovers hidden JSON APIs on websites by monitoring network traffic, enabling reliable data extraction without HTML parsing. |
+| [skills/chrome-inspect/](skills/chrome-inspect/SKILL.md) | Inspects live browser tabs using Chrome DevTools — reads cookies, localStorage, JWT tokens, DOM elements, network requests, and console logs. |
 
 ## How to Use
 
@@ -27,11 +36,13 @@ These templates are designed to be used by AI coding assistants following a stan
 
 2. **The AI assistant automatically:**
    - Reviews the `AGENTS.md` file to understand the workflow
-   - Identifies the appropriate template based on your request:
-     - Bug fixes → `002_bug_fix_template.md`
-     - New features/development → `001_task_planning_template.md`
-     - Code reviews → `003_code_review_template.md`
-     - Git commits → `004_git_commit_workflow.md`
+   - Identifies the appropriate template or skill based on your request:
+     - Bug fixes → `templates/002_bug_fix.md`
+     - New features/development → `templates/001_task_planning.md`
+     - Code reviews → `templates/003_code_review.md`
+     - Git commits → `templates/004_git_commit_workflow.md`
+     - Scraping a website → `skills/scraping-website/`
+     - Inspecting a browser tab → `skills/chrome-inspect/`
    - Follows the template's instructions to complete your task
 
 ## Contributing
